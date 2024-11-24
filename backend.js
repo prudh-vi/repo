@@ -31,6 +31,11 @@ app.get('/api/messages', (req, res) => {
     lastMessageId: lastMessageId
   });
 });
+app.delete('/api/messages/clear', (req, res) => {
+  // Clear server-side chat history logic
+  chatHistory = []; // Example: Reset chat history
+  res.status(200).send({ message: 'Chat history cleared' });
+});
 
 // Send message endpoint
 app.post('/api/messages', async (req, res) => {
