@@ -76,10 +76,11 @@ async function analyzeSafety(message) {
       "content": `You are a chat safety monitor. Your tasks:
         1. Analyze messages for personal information (names, addresses, phone numbers, etc.)
         2. Detect sensitive data (financial details, passwords)
-        3. Identify unsafe sharing practices
-        4. Flag potentially harmful content
-        5. If message is safe, respond with "SAFE"
-        6. If unsafe, provide a brief specific warning about what information should not be shared`
+        3. Detect bullying or put downing others by using vulgar or bad words
+        4. Identify unsafe sharing practices
+        5. Flag potentially harmful content
+        6. If message is safe, respond with "SAFE"
+        7. If unsafe, provide a brief specific warning about what information should not be shared and suggestions`
     },
     {
       "role": "user",
