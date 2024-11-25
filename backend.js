@@ -89,7 +89,7 @@ async function analyzeSafety(message) {
 
   try {
     const chat = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: "gpt-4o-mini",
       messages: messages,
       temperature: 0.3, // Lower temperature for more consistent safety checking
       max_tokens: 150, // Shorter responses for warnings
